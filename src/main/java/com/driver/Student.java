@@ -7,7 +7,7 @@ public class Student {
     private double averageScore;
 
     public Student(){
-
+        super();
     }
 
     public String getName() {
@@ -37,6 +37,12 @@ public class Student {
     @Override
     public String toString() {
         return "Student [name=" + name + ", age=" + age + ", averageScore=" + averageScore + "]";
+    }
+
+    public Student(String name, int age, double averageScore) {
+        this.name = name;
+        this.age = age;
+        this.averageScore = averageScore;
     }
     
     
